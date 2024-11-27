@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>My Portfolio</title> 
+  <link rel="stylesheet" href="global.css"/>
+  <link rel="stylesheet" href="home.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+
+  <!--Links to the footer-->
+  <div id="nav">
+ <!--<iframe frameborder="0" marginwidth="0" marginheight="0" src="html/templates/nav.html" ></iframe>-->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(function(){
+      $("#nav").load("html/templates/nav.html"); 
+    });
+  </script> 
+  <div class="header">
+    <img src="images/1647738736456.jpg" class="portrait">
+    <h1>Hi, I'm Derek Sadler</h1>
+    <p>Recent Computer Science graduate open to work</p>
+  </div>
+
+  <div class="content">
+    <div class="menu">
+        <p> View My Qualifications</p>
+        <div class="hl"></div>
+        <div class="links">
+            <a class = "quick-link" href="http://brand.wsu.edu/editorial/">
+            <span>icon</span>
+            <span class="label">Projects</span>
+            </a>
+            <a class = "quick-link" href="http://brand.wsu.edu/editorial/">
+                <span>icon</span>
+                <span class="label">Education and Certifactions</span>
+            </a>
+            <a class = "quick-link quick-link-last" href="http://brand.wsu.edu/editorial/">
+                <span>icon</span>
+                <span class="label">Certifactions</span>
+            </a>
+        </div>
+        <img src="images/bl.jpg" >
+    </div>
+  </div>
+
+  <!--Links to the footer-->
+  <object style="width: 100%;" type="text/html" data="html/templates/footer.html" ></object>
+
+</body>
+</html>
+
+
