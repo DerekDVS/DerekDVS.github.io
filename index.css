@@ -1,0 +1,128 @@
+
+
+/* Header/Blog Title */
+.header {
+  top: 0px;
+  padding: 60px;
+  font-size: 30px;
+  text-align: center;
+  background: var(--primary_crimson);
+  color: var(--secondary_white);
+}
+
+.portrait {
+  border-radius: 50%;
+  object-fit: cover; 
+  overflow: hidden;
+}
+
+/* Main Content*/
+.content {
+  flex: 1;
+  height: 100%;
+  background-color: white;
+  padding: 20px;
+}
+
+.menu {
+  background-color: var(--black_forty);
+  border-radius: 25px;
+}
+
+.menu p {
+  font-family: Montserrat;
+  text-align: center; 
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--black_eighty);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+
+}
+
+.menu .hl {
+  width: 90%;
+  height: 5px;
+  border-bottom: 5px solid var(--primary_crimson);    
+  border-radius: 25px;
+  margin: 0 auto; /* Centers horizontally */ 
+}
+
+.links {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 50px;
+  padding-top: 25px;
+}
+
+.quick-link {
+  color: var(--secondary_black);
+  background-color: var(--black_twenty);
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 26px 24px;
+  display: grid;
+}
+
+.label {
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #000;
+}
+
+.content img {
+  display: flex;
+  padding: 10px; 
+  margin: 0 auto;
+  border-radius: 25px;
+  align-items: center;
+  max-width: 100%; /* Prevents the image from exceeding its container's width */
+    height: auto;    /* Maintains aspect ratio */
+}
+
+
+@media (max-width: 800px) { /* For smaller screens */
+  .links {
+      grid-template-columns: 1fr; /* Switch to 1 column */
+  }
+}
+
+.footer {
+  font-family: Montserrat;
+  position: fixed;
+  display: flex;  
+  justify-content: space-between; /* Push items to opposite sides */
+  align-items: center; /* Center items vertically */
+  font-size: 16px;
+  font-weight: 600;
+  bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: var(--black_seventy);
+  background-color: var(--black_forty);
+  width: 100%;
+}
+
+.social-links__item {
+  display: block;
+  float: left;
+}
+
+.social-links__link {
+  width: 40px;
+  height: 40px;
+  fill: var(--black_seventy);
+  transition: fill 0.3s ease-in-out; 
+}
+
+.social-links__link:hover {
+  fill: var(--primary_crimson);
+}
